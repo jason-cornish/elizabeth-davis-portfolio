@@ -46,11 +46,15 @@ const NavBar = styled.div`
 
   .active {
     transform: scale(1.3);
+    opacity: 1;
   }
 
   .inactive {
     transform: scale(1);
     opacity: 0.5;
+    :hover {
+      opacity: 1;
+    }
   }
 `;
 
@@ -71,7 +75,8 @@ const SlideIcon = styled.div`
   justify-content: center;
   width: 5rem;
   height: 5rem;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  /* transition: opacity 0.2s ease-in-out; */
   background-color: ${(props) => props.theme.colors.highlight1};
   border-radius: ${(props) => props.theme.other.borderRadius};
   cursor: pointer;

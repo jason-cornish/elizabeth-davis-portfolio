@@ -26,12 +26,12 @@ const SlideWrapper = styled.div`
 `;
 
 const SlideRight = styled.div`
-  width: 30%;
+  width: 35%;
 `;
 
 const Image = styled.div`
   background-color: ${(props) => props.theme.colors.highlight1};
-  width: 70%;
+  width: 65%;
   border-radius: ${(props) => props.theme.other.borderRadius};
   height: 400px;
 `;

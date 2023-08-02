@@ -14,18 +14,4 @@ export const ChipsRow = styled.div`
   margin-bottom: 1rem;
   flex-wrap: wrap;
   row-gap: 5px;
-
-  @media screen and (max-width: 1200px) {
-    padding: 0 10%;
-    flex-wrap: wrap;
-    column-gap: 5px;
-    row-gap: 5px;
-  }
-
-  @media screen and (max-width: 700px) {
-    row-gap: 5px;
-    flex-wrap: wrap;
-    max-width: 100%;
-    padding: 0 5%;
-  }
 `;
